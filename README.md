@@ -5,7 +5,7 @@
 
 ---
 
-![MINECRAFT](https://tinyurl.com/2xyacb5f)
+![MINECRAFT](https://tinyurl.com/yf6bmu3s)
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
