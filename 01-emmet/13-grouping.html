@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>07- Text</title>
+    <title>13- Grouping Elemnts</title>
     <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body class="emmet">
@@ -14,20 +14,22 @@
     </nav>
     <main>  
         <header>
-            <h1>07- Text { }</h1>
+            <h1>13- Grouping ()</h1>
             <p>
-                this willdcard allows you to crate text.
+                this willdcard allows you to group elements.
             </p>
         </header>
         <section>
            <h3>Example:</h3> 
-           <p>div{Lorem Ipsum Dolor}
-            a{Click aqui} {}
-           </p>
+           <p>(header>nav)(section>article) ()</p>
            <h3>Result:</h3>
         <xmp>
-<div>Lorem Ipsum Dolor</div> 
-<a href="">Click aqui</a>
+        <header>
+            <nav></nav>
+        </header>
+        <section>
+            <article></article>
+        </section>   
         </xmp>
         </section>
 
@@ -38,4 +40,3 @@
 
 
 </html>
-
