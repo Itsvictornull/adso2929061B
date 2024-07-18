@@ -31,9 +31,7 @@ img, picture, svg, video, canvas{
     background-size: cover;
 }
 
-input, button, textarea, select{
-    font: inherit; 
-}
+
 
 @media (prefers-reduced-motion: reduce){
     html:focus-within {
@@ -172,7 +170,8 @@ body{
         background-color: var(--color-2);
         margin-inline: auto;
         h3{
-            border-bottom: 2px dotted var (--color-2);
+            border-bottom: 2px dotted var(--color-2);
+            margin-block: 0.6rem;
         }
         p{
             font-size: 1.6rem;
