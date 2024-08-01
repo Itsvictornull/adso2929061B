@@ -10,6 +10,50 @@
             align-items: center;
             color: black;
         }
+        div.parent {
+            border: 2px solid#0009;
+            background-color: #0006;
+            margin: 2rem auto;
+            padding: 2rem;
+            min-height: 100px;
+            width: 260px;
+            position: relative;
+        }
+        div.child {
+            background-color: #0006;
+            color: #fff9;
+            padding: 0.4rem;
+            text-align: center;
+            width: 80px;
+        }
+        div.relative{
+            position: relative;
+            top: -20px;
+            left: 80px;
+        }
+        div.absolute{
+             position: absolute;
+             top: 2px;
+             left: 2px;
+        }
+        div.fixed {
+            position: fixed;
+            top: 680px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9;
+        }
+        div.sticky{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
+            width: 100%;
+        }
+        div.parent p {
+            font-size: 0.8rem !important;
+            text-align: justify;
+        }
+
     </style>
 </head> 
 <body class="css">
@@ -28,32 +72,34 @@
                 <li>Sticky</li>
         </header>
         <section>
-                <h3>Relative</h3>
+                <h3>relative</h3>
                 <div class="parent">
-                    <div class="child relative">BOX</div>
+                    <div class="child relative">BOX <small>relative</small></div>
                 </div>
-                <h3>Absolute</h3>
+                <h3>absolute</h3>
                 <div class="parent">
-                    <div class="child absolute">BOX</div>
+                    <div class="child absolute">BOX <small>absolute</small></div>
                 </div>
-                <h3>Fixed</h3>
+                <h3>fixed</h3>
                 <div class="parent">
-                    <div class="child fixed">BOX</div>
+                    <div class="child fixed">BOX 
+                        <small>fixed</small></div>
                 </div>
                 <h3>Sticky</h3>
                 <div class="parent">
-                    <div class="child sticky">BOX</div>
+                    <div class="child sticky">BOX <small>sticky</small></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi numquam quae saepe nobis! Harum et velit magnam nostrum incidunt suscipit voluptatem nobis impedit numquam commodi laboriosam nam iste placeat possimus quas aut consequuntur repellat officiis ducimus dolores repellendus ipsum quia, sint atque. Incidunt, aut quae! Repudiandae quae vel sequi tenetur est perferendis eum libero aliquid provident mollitia enim modi dignissimos voluptate odio, dolorem, vitae debitis dicta ullam laborum at numquam aliquam nam, saepe illo. Culpa laboriosam autem voluptas at numquam officiis dolor ab delectus atque perspiciatis! Eos repellat consectetur quis impedit cum, mollitia nesciunt accusantium tempora quibusdam, fugit quo itaque error, eligendi ipsam nihil molestiae officiis. Beatae iure incidunt vel nulla reprehenderit facilis ut sit tenetur. Nesciunt laborum at distinctio molestiae fugiat? Cum doloremque quibusdam molestiae culpa! Suscipit enim sapiente culpa, deleniti aliquid id tenetur laborum tempora, ipsam nulla molestias! Veniam esse mollitia obcaecati et eum nihil ea perspiciatis maxime praesentium est ipsam, eos repudiandae perferendis error quaerat laborum rerum! Eveniet dolores aperiam et eum quibusdam sed debitis dolorum molestiae? Tempore quidem quasi, illum explicabo quod sunt qui, ratione vel earum aperiam praesentium amet! Consequuntur ipsam recusandae id aut tempora maiores similique, nam cum ullam deserunt consectetur autem ipsa?
+                    </p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi numquam quae saepe nobis! Harum et velit magnam nostrum incidunt suscipit voluptatem nobis impedit numquam commodi laboriosam nam iste placeat possimus quas aut consequuntur repellat officiis ducimus dolores repellendus ipsum quia, sint atque. Incidunt, aut quae! Repudiandae quae vel sequi tenetur est perferendis eum libero aliquid provident mollitia enim modi dignissimos voluptate odio, dolorem, vitae debitis dicta ullam laborum at numquam aliquam nam, saepe illo. Culpa laboriosam autem voluptas at numquam officiis dolor ab delectus atque perspiciatis! Eos repellat consectetur quis impedit cum, mollitia nesciunt accusantium tempora quibusdam, fugit quo itaque error, eligendi ipsam nihil molestiae officiis. Beatae iure incidunt vel nulla reprehenderit facilis ut sit tenetur. Nesciunt laborum at distinctio molestiae fugiat? Cum doloremque quibusdam molestiae culpa! Suscipit enim sapiente culpa, deleniti aliquid id tenetur laborum tempora, ipsam nulla molestias! Veniam esse mollitia obcaecati et eum nihil ea perspiciatis maxime praesentium est ipsam, eos repudiandae perferendis error quaerat laborum rerum! Eveniet dolores aperiam et eum quibusdam sed debitis dolorum molestiae? Tempore quidem quasi, illum explicabo quod sunt qui, ratione vel earum aperiam praesentium amet! Consequuntur ipsam recusandae id aut tempora maiores similique, nam cum ullam deserunt consectetur autem ipsa?
-                </p>
-          
+        
         </section>
 
     </main>
 
     
 </body>
+
 
 
 </html>
