@@ -1,14 +1,156 @@
-<section class="caja">
-            <div class="box uno">
-                <p class="personaje">Kratos</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 -steps</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+     section div.steps {
+        background: url(images/steps-all.png);
+        height: 280px;
+        margin: 0.5rem auto;
+        width: calc(1024px/4);
+        animation: animSteps 0.8s steps(4) infinite;
+     }
+     section div.steps01 {
+        background: url(images/steps-all.png) no-repeat;
+     }
+
+     section div.front {
+        background-position-y: calc(-280px * 0);
+     }
+     section div.back {
+        background-position-y: calc(-256px * 3);
+     }
+     section div.left {
+        background-position-y: calc(-256px * 1);
+     }
+     section div.right {
+        background-position-y: calc(-256px * 2);
+     }
+     @keyframes animSteps {
+        100% {
+            background-position-x: -1024px;
+        }
+     }
+
+     section div.controls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+     }
+
+     section div.controls button {
+        height: 45px;
+        width: 45px;
+        background-color: #fff9;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2 ease-in;
+        &:hover{
+            background-color: #fffa;
+            transform: scale(1.05);
+        }
+     }
+
+     section div.controls button.btnBack {
+        transform: rotate(-90deg);
+     }
+     section div.controls button.btnFront {
+        transform: rotate(90deg);
+     }
+    
+    </style>
+</head> 
+<body class="css">
+    <nav>
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+    </nav>
+    <main>  
+        <header>
+            <h1>40 -steps</h1>
+            <p>
+                Allows step-by-step animation of sprite
+            </p>
+        </header>
+        <section>
+          <h3>Example 01:</h3>
+          <div class="steps steps01"></div>
+          <div class="controls">
+            <div class="header">
+                <button class="btnBack">&rarr;</button>
             </div>
-            <div class="box dos">
-                <p class="personaje">Atreus</p>
-            </div>
-            <div class="box tres">
-                <p class="personaje">Freja</p>
-            </div>
-            <div class="box cuatro">
-                <p class="personaje">Mimir</p>
-            </div>
+            <div class="footer">
+                <button class="btnLeft">&larr;</button>
+                <button class="btnFront">&rarr;</button>
+                <button class="btnRight">&rarr;</button></div>
+          </div>
         </section>
+
+    </main>
+    <script>
+        let btnFront = document.querySelector(".btnFront")
+        let btnBack = document.querySelector(".btnBack")
+        let btnLeft = document.querySelector(".btnLeft")
+        let btnRight = document.querySelector(".btnRight")
+
+        let steps = document.querySelector(".steps")
+         
+        btnFront.addEventListener('click' , () => {
+            removeALLClasses()
+            steps.classList.add("front")
+            })
+
+        btnBack.addEventListener('click' , () => {
+            removeALLClasses()
+            steps.classList.add('back')
+            })
+
+        btnLeft.addEventListener('click' , () => {
+           removeALLClasses()
+            steps.classList.add('left')
+            })
+
+        btnRight.addEventListener('click' , () => {
+           removeALLClasses()
+            steps.classList.add('right')
+            })
+
+
+
+        function removeALLClasses(){
+            steps.classList.remove('front' , 'back' , 'left' , 'right')
+        }    
+     
+        document.addEventListener('keyup', function(e) {
+            if(e.keyCode == 37) {
+                removeALLClasses()
+                steps.classList.add('left')
+            }
+            if(e.keyCode == 38) {
+                removeALLClasses()
+                steps.classList.add('back')
+            }
+            if(e.keyCode == 39) {
+                removeALLClasses()
+                steps.classList.add('right')
+            }
+            if(e.keyCode == 40) {
+                removeALLClasses()
+                steps.classList.add('front')
+            }
+
+        })
+    </script>
+
+    
+</body>
+
+
+</html>
