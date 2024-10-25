@@ -200,7 +200,7 @@ body{
             gap: 1rem;
             a:is(:link, :visited){
                 border-radius: 50px;
-                background: linear-gradient(to right, #ff0000 , rgb(0, 0, 0));
+                background: linear-gradient(to right, #00000070 , rgba(77, 77, 77, 0.281));
                 color: var(--color-1);
                 display: flex;
                 align-items: center;
@@ -211,7 +211,7 @@ body{
                 width: 240px;
             }
             a:is(:hover) {
-                background-color: #17d440;
+                background-color: #000000;
                 transform: scale(1.05) translateY(-4px);
 
             }
@@ -322,6 +322,37 @@ body.css{
             a{
                 span{
                     background-color: #2600ff;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------*/
+/* pug */
+/* -------------------------*/
+body.pug{
+    background-color: #9e6a39;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1065%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(142%2c 72%2c 17%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c222 C 57.6%2c202.4 172.8%2c118.2 288%2c124 C 403.2%2c129.8 460.8%2c274 576%2c251 C 691.2%2c228 748.8%2c16.2 864%2c9 C 979.2%2c1.8 1036.8%2c193 1152%2c215 C 1267.2%2c237 1382.4%2c138.2 1440%2c119L1440 560L0 560z' fill='rgba(115%2c 62%2c 11%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c513 C 57.6%2c475.8 172.8%2c341.6 288%2c327 C 403.2%2c312.4 460.8%2c424.6 576%2c440 C 691.2%2c455.4 748.8%2c389.2 864%2c404 C 979.2%2c418.8 1036.8%2c521 1152%2c514 C 1267.2%2c507 1382.4%2c398 1440%2c369L1440 560L0 560z' fill='rgba(171%2c 102%2c 49%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1065'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    main{
+        header{
+            img{
+                border-color: hwb(0 100% 0% / 0.473);
+            }
+        }
+        menu{
+            a{
+                span{
+                    background-color: #9e6a39;
                 }
             }
         }
