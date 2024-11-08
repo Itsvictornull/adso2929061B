@@ -5,57 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>00 Template</title>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-      section {
-          padding: 0.5rem !important;
-          width: 660px !important;
-      }
-      
-    </style>
   </head>
   <body class="pug">
     <nav> <a href="../index.html">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
         <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z">             </path>
       </svg></a></nav>
-      <main>
-        <header>
-          <h1>17 Challenge</h1>
-          <p>Provides an exercise to apply the learned concepts.</p>
-        </header>
-        <section>
-          <ul></ul>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#08fafa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">1</div>
+    <style>
+  
+      li {
+        list-style: none;
+       width:370px;
+       height: 55px;
+      }
+      .color-block {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.644);
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 35px;
+        height: 55px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path>
+        </svg>
+      </a>
+    </nav>
+
+    <main>
+      <header>
+        <h1>17 Challenge</h1>
+        <p>Provides an exercise to apply the learned concepts.</p>
+      </header>
+
+      <section>
+        <ul>
+          <li style="background-color: #08fafa;">
+            <div class="color-block">1</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#17c8fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">2</div>
+          <li style="background-color: #17c8fa;">
+            <div class="color-block">2</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#3296fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">3</div>
+          <li style="background-color: #3296fa;">
+            <div class="color-block">3</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#4b64fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">4</div>
+          <li style="background-color: #4b64fa;">
+            <div class="color-block">4</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#6432fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">5</div>
+          <li style="background-color: #6432fa;">
+            <div class="color-block">5</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#7d01fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">6</div>
+          <li style="background-color: #7d01fa;">
+            <div class="color-block">6</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#9601fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">7</div>
+          <li style="background-color: #9601fa;">
+            <div class="color-block">7</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#af01fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">8</div>
+          <li style="background-color: #af01fa;">
+            <div class="color-block">8</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#c801fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">9</div>
+          <li style="background-color: #c801fa;">
+            <div class="color-block">9</div>
           </li>
-          <li style="height: 110px; list-style: none; margin:5px; background-color:#e101fa">
-            <div style="display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.7); color: white; font-size:30px; height: 110px; width: 90px;">10</div>
+          <li style="background-color: #e101fa;">
+            <div class="color-block">10</div>
           </li>
-        </section>
-      </main>
-    </body>
-  </html>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
